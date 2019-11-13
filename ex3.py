@@ -13,5 +13,6 @@ canvas.create_image(image.size[0]//2, image.size[1]//2, image=image_tk)
 def callback(event):
     print(event.x, event.y)
 
-canvas.bind("<Motion>", callback)
+canvas.bind("<Button>", callback)
 tkinter.mainloop()
+

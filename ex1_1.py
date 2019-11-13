@@ -11,7 +11,7 @@ image_tk = ImageTk.PhotoImage(image)
 canvas.create_image(image.size[0]//2, image.size[1]//2, image=image_tk)
 
 def callback(event):
-    print(event.x, event.y)
+    print("clicked at: ", event.x, event.y)
 
-canvas.bind("<Motion>", callback)
+canvas.bind("<Button-1>", callback)
 tkinter.mainloop()
